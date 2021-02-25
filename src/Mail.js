@@ -13,6 +13,11 @@ import WatchLaterIcon from "@material-ui/icons/WatchLater";
 import CheckCircleIcon from "@material-ui/icons/CheckCircle";
 import LabelImportantIcon from "@material-ui/icons/LabelImportant";
 import MoreVertIcon from "@material-ui/icons/MoreVert";
+
+import UnfoldMoreIcon from "@material-ui/icons/UnfoldMore";
+import PrintIcon from "@material-ui/icons/Print";
+import ExitToAppIcon from "@material-ui/icons/ExitToApp";
+
 function Mail() {
   const history = useHistory();
   return (
@@ -55,9 +60,27 @@ function Mail() {
             <MoreVertIcon />
           </IconButton>
         </div>
-        <div className="mail--toolsRight"></div>
+        <div className="mail--toolsRight">
+          <IconButton>
+            <UnfoldMoreIcon />
+          </IconButton>
+          <IconButton>
+            <PrintIcon />
+          </IconButton>
+          <IconButton>
+            <ExitToAppIcon />
+          </IconButton>
+        </div>
       </div>
-      <h1>Kavin</h1>
+      <div className="mail_body">
+        <div className="mail_bodyHeader">
+          <h2>Subject</h2>
+          <LabelImportantIcon className="mail_important" />
+          <p>Title</p>
+          <p className="mail_time">10</p>
+        </div>
+        <div className="mail_message">Message</div>
+      </div>
     </div>
   );
 }
