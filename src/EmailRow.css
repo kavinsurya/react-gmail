@@ -17,7 +17,7 @@
 
 .emailRow_message {
   display: flex;
-  flex: 0.3;
+  flex: 0.8;
   align-items: center;
   font-size: 13px;
 }
@@ -45,5 +45,6 @@
   padding-right: 15px;
   font-size: 9px;
   font-weight: bold;
+  justify-content: right;
   }
   
