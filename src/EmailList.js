@@ -86,26 +86,7 @@ function EmailList() {
           time={new Date(timestrap?.seconds * 1000).toUTCString()}
         />
         ))}
-        {/* <EmailRow
-          title="Title"
-          subject="Subject"
-          description="hello world"
-          time="10AM"
-        />
-
-        <EmailRow
-          title="Title"
-          subject="Subject"
-          description="hello world"
-          time="10AM"
-        />
-
-        <EmailRow
-          title="Title"
-          subject="Subject"
-          description="hello world "
-          time="10AM"
-        /> */}
+       
       </div>
     </div>
   );
